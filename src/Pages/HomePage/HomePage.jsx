@@ -1,7 +1,11 @@
 import "./HomePage.scss";
 
 function HomePage() {
-  return <div className="home-page"></div>;
+  return (
+    <main className="home-page">
+      <div className="home-page__container"></div>
+    </main>
+  );
 }
 
 export default HomePage;
