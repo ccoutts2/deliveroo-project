@@ -12,7 +12,7 @@ function QuizRouter() {
         </div>
 
         <div className="quiz-router__right-container">
-          <Link className="quiz-router__button-link" to="./quiz">
+          <Link className="quiz-router__button-link" to="/quiz">
             <button className="quiz-router__button">Take Quiz</button>
           </Link>
         </div>
