@@ -1,0 +1,40 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.quiz-router {
+  background-color: #ffffff;
+  padding-inline: 1rem;
+  margin: 0;
+  @include flex(row, center, center);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+
+  &__outercontainer {
+    width: 100%;
+  }
+
+  &__left-container {
+    width: 60%;
+  }
+
+  &__right-container {
+    width: 30%;
+  }
+
+  &__text {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0.25rem;
+  }
+
+  &__button-link {
+    text-decoration: none;
+  }
+
+  &__button {
+    @include button;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
