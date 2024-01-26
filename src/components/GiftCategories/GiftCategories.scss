@@ -3,5 +3,13 @@
 
 .gift-categories {
   padding-inline: 1rem;
-  height: 60vh;
+  height: 140vh;
+
+  &__list {
+    padding: 1rem 0;
+    @include flex(row, center, center);
+    height: 40vh;
+
+    overflow: scroll;
+  }
 }
