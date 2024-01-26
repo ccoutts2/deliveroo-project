@@ -1,10 +1,10 @@
 import "./HomePage.scss";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
-    <main className="home-page">
-      <div className="home-page__container"></div>
-    </main>
+   <Link className="home-page__link" to="/gifts"> <main className="home-page">
+    </main></Link>
   );
 }
 
