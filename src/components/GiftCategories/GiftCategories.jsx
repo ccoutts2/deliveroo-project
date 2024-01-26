@@ -27,7 +27,7 @@ function GiftCategories() {
         <div className="gift-categories-section">
           <h3 className="gift-categories__title">Recipient:</h3>
           <div className="gift-categories__list">
-            <Link to="/quiz/result" className="gift-categories__link">
+            <Link to="/for-him" className="gift-categories__link">
               <img className="gift-categories__image" src={recipient1}></img>
             </Link>
             <img className="gift-categories__image" src={recipient2}></img>

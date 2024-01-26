@@ -9,6 +9,7 @@ function OccasionPage() {
         <Link to="/quiz"><img className="occasion-page__back-arrow"src={backArrow}/></Link>
       </div>
       <h3 className="occasion-page__title">Occasion?</h3>
+      <Link className="occasion-page__next-page" to="/quiz/interests">
       <section className="occasion-page__card-container">
       <article className="occasion-page__card occasion-page__card1">Birthday</article>
       <article className="occasion-page__card">Anniversary</article>
@@ -19,6 +20,7 @@ function OccasionPage() {
       <article className="occasion-page__card occasion-page__card1">Holiday</article>
       <article className="occasion-page__card">No special occasion</article>
       </section>
+      </Link>
     </main>
   );
 }
