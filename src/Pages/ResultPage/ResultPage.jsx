@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function ResultPage() {
     return (
-        <main className="result-page"></main>
+        <main className="result-page"><Link to="/gifts"><img className="result-page__back-arrow"src={backArrow}/></Link></main>
     )
 }
 

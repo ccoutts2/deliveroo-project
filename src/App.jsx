@@ -10,6 +10,7 @@ import AgePage from "./pages/AgePage/AgePage";
 import StylePage from "./pages/StylePage/StylePage";
 import PricePage from "./pages/PricePage/PricePage";
 import ResultPage from "./pages/ResultPage/ResultPage";
+import ForHimPage from "./pages/ForHimPage/ForHimPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/quiz/style" element={<StylePage />} />
         <Route path="/quiz/price" element={<PricePage />} />
         <Route path="/quiz/result" element={<ResultPage />} />
+        <Route path="/for-him" element={<ForHimPage />} />
       </Routes>
     </BrowserRouter>
   );
