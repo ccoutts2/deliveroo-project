@@ -1,22 +1,26 @@
 import "./RecipientGiftPage.scss";
 import giftScreen from "../../assets/images/gift-screen.svg";
-// import GiftModal from "../../components/GiftModal/GiftModal";
 import videoModal from "../../assets/images/video-modal.svg";
+import video from "../../assets/video/video.mp4";
 import Popup from "reactjs-popup";
 import { useState } from "react";
-
 function RecipientGiftPage() {
   const [open, setOpen] = useState(false);
   const closeModal = () => setOpen(false);
-  // const overlayStyle = { background: "rgba(0,0,0,0.5)" };
-  // const contentStyle = { background: "#000" };
-
   return (
     <main className="recipient-gift-page">
       <Popup open={open} closeOnDocumentClick onClose={closeModal} modal nested>
-        <div>
-          <img src={videoModal} />
-          <button className="button">Save Video</button>
+        <div className="recipient-gift-page__video-container">
+          <button className="recipient-gift-page__close" onClick={closeModal}>
+            &times;
+          </button>
+          <video
+            className="recipient-gift-page__video"
+            controls
+            autoPlay
+            src={video}
+          />
+          <button className="recipient-gift-page__button">Save Video</button>
         </div>
       </Popup>
       <div className="recipient-gift-page__container">
@@ -25,5 +29,4 @@ function RecipientGiftPage() {
     </main>
   );
 }
-
 export default RecipientGiftPage;

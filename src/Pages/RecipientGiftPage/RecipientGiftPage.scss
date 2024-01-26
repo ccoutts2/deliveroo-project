@@ -1,8 +1,32 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+.popup-overlay {
+  background: rgba(19, 24, 44, 0.7);
+}
 .recipient-gift-page {
   height: 100%;
   margin: 0;
-}
-
-.popup-overlay {
-  background: rgba(19, 24, 44, 0.7);
+  position: relative;
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -12%;
+    font-size: 1.5rem;
+    border: none;
+  }
+  &__video {
+    height: 65vh;
+  }
+  &__button {
+    position: absolute;
+    bottom: -10%;
+    width: 100%;
+    background: url("../../assets/icons/upload.svg") 5px;
+    background-repeat: no-repeat;
+    @include button;
+    &:hover {
+      background-color: #0e5454;
+    }
+  }
 }
