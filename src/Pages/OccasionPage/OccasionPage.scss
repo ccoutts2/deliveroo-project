@@ -1,11 +1,11 @@
 @use "../../styles/partials/variables" as *;
 
-.quiz-page {
+.occasion-page {
   font-weight: 700;
   &__header {
     height: 14rem;
     width: 100%;
-    background-image: url("../../assets/images/image 3.svg");
+    background-image: url("../../assets/images/image 4.jpg");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -19,9 +19,6 @@
   }
   &__title {
     padding: 1rem 0 0.5rem 1rem;
-  }
-  &__next-page {
-    text-decoration: none;
   }
   &__card-container {
     padding: 1rem;
