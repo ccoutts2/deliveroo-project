@@ -5,6 +5,7 @@ import GiftsPage from "./pages/GiftsPage/GiftsPage";
 import RecipientGiftPage from "./pages/RecipientGiftPage/RecipientGiftPage";
 import QuizPage from "./pages/QuizPage/QuizPage";
 import OccasionPage from "./pages/OccasionPage/OccasionPage";
+import InterestsPage from "./pages/InterestsPage/InterestsPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/recipient-gift" element={<RecipientGiftPage />} />
         <Route path="/quiz" element={<QuizPage />} />
         <Route path="/quiz/occasion" element={<OccasionPage />} />
+        <Route path="/quiz/interests" element={<InterestsPage />} />
       </Routes>
     </BrowserRouter>
   );
