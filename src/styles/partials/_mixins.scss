@@ -10,20 +10,15 @@
 
 // components
 @mixin button {
-  @include font-header-medium;
   @include flex(row, center, center);
   width: 100%;
-  // background-color: ;
-  // color: ;
+  background-color: $color-background-primary;
+  color: $color-text-primary;
   border: none;
-  border-radius: 1.25rem;
+  border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
   text-transform: capitalize;
   white-space: nowrap;
   padding: 0.5rem 1rem;
-
-  &:hover {
-    background-color: $color-brand-secondary;
-  }
 }
