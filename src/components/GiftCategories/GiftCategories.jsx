@@ -15,6 +15,10 @@ import occasion5 from "../../assets/images/occasion5.svg";
 import occasion6 from "../../assets/images/occasion6.svg";
 import occasion7 from "../../assets/images/occasion7.svg";
 import price1 from "../../assets/images/price1.svg";
+import price2 from "../../assets/images/price2.svg";
+import price3 from "../../assets/images/price3.svg";
+import price4 from "../../assets/images/price4.svg";
+import price5 from "../../assets/images/price5.svg";
 
 function GiftCategories({ title, image, details }) {
   return (
@@ -46,8 +50,12 @@ function GiftCategories({ title, image, details }) {
         </div>
         <div className="gift-categories-section">
           <h3 className="gift-categories__title">Price:</h3>
-          <div className="gift-categories__scroll">
+          <div className="gift-categories__list">
             <img className="gift-categories__image" src={price1}></img>
+            <img className="gift-categories__image" src={price2}></img>
+            <img className="gift-categories__image" src={price3}></img>
+            <img className="gift-categories__image" src={price4}></img>
+            <img className="gift-categories__image" src={price5}></img>
           </div>
         </div>
       </div>
