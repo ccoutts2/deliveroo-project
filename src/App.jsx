@@ -6,6 +6,10 @@ import RecipientGiftPage from "./pages/RecipientGiftPage/RecipientGiftPage";
 import QuizPage from "./pages/QuizPage/QuizPage";
 import OccasionPage from "./pages/OccasionPage/OccasionPage";
 import InterestsPage from "./pages/InterestsPage/InterestsPage";
+import AgePage from "./pages/AgePage/AgePage";
+import StylePage from "./pages/StylePage/StylePage";
+import PricePage from "./pages/PricePage/PricePage";
+import ResultPage from "./pages/ResultPage/ResultPage";
 
 function App() {
   return (
@@ -17,6 +21,10 @@ function App() {
         <Route path="/quiz" element={<QuizPage />} />
         <Route path="/quiz/occasion" element={<OccasionPage />} />
         <Route path="/quiz/interests" element={<InterestsPage />} />
+        <Route path="/quiz/age" element={<AgePage />} />
+        <Route path="/quiz/style" element={<StylePage />} />
+        <Route path="/quiz/price" element={<PricePage />} />
+        <Route path="/quiz/result" element={<ResultPage />} />
       </Routes>
     </BrowserRouter>
   );

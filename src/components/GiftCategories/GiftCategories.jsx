@@ -20,7 +20,7 @@ import price3 from "../../assets/images/price3.svg";
 import price4 from "../../assets/images/price4.svg";
 import price5 from "../../assets/images/price5.svg";
 
-function GiftCategories({ title, image, details }) {
+function GiftCategories() {
   return (
     <>
       <div className="gift-categories">
